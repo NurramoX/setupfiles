@@ -1,0 +1,61 @@
+# add ; at the of the file
+let mapleader = "\<Space>"
+ 
+# # file navigation
+# #
+nnoremap <leader>e :action ExpandRegion<CR>
+nnoremap <leader>c :action CollapseRegion<CR>
+nnoremap <leader>re :action RenameElement<CR>
+nnoremap ff :action Find<CR>
+# 
+# # indent code
+
+# nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
+
+
+
+# Go to Class - Ctrl+N
+# Create new directory? - Ctrl+N
+# New File + Ctrl+N
+
+# Close Tab - Ctrl+F4
+# Extend Selection - Ctrl+w ---- <Ctrl+Space>
+# Close Tab + Ctrl+w
+
+# To Dos
+# Split windows with <leader>vs
+nnoremap <leader>vs :action SplitVertically<CR>
+
+# Go to file - Ctrl+Shift+N
+# <leader>pf
+nnoremap <leader>pf :action GotoFile<CR>
+nnoremap <leader>gn :action GotoNextError<CR>
+nnoremap <leader>gp :action GotoPreviousError<CR>
+nnoremap <leader>lc :action JumpToLastChange<CR>
+nnoremap <leader>pu :action FindUsages<CR>
+
+# Find in path - Ctrl+Shift+F
+nnoremap <leader>ps :action FindInPath<CR>
+
+# Show intentions - Alt-Enter
+nnoremap <leader>si :action ShowIntentionActions<CR>
+# Show structure - Ctrl+F12
+nnoremap <leader>st :action FileStructurePopup<CR>
+vnoremap <leader>gc :action CommentByLineComment<CR>
+# Type Info
+# Goto by name actions
+
+
+# Project
+# <leader>pv
+#nnoremap <leader>pv :action ActivateProjectToolWindow<CR>
+
+
+
+nnoremap <C-f> <C-f>zz
+nnoremap <C-u> <C-u>zz
+
+
+set relativenumber
+set number
+set surround
